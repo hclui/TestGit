@@ -1,0 +1,51 @@
+git &  github youtube URL
+
+https://www.youtube.com/watch?v=J_Clau1bYco
+
+http://github.com
+UID: hclui
+email: hclui@eipgroup.asia
+password: factor517space
+
+2 repos created. 
+use 'FactorSpace1' as it is configured and cloned to git command window;
+files repreciated to C:\Users\Ho Chung LUI\Documents\PythonCode\FactorSpace1
+
+
+Add SSH key to github:
+
+1. Open git bash 
+2. Type cd ~/.ssh. This will take you to the root directory for Git (Likely C:\Users\[YOUR-USER-NAME]\.ssh\ on Windows)
+3. Within the .ssh folder, there should be these two files: id_rsa and id_rsa.pub. These are the files that tell your computer how to communicate with GitHub, BitBucket, or any other Git based service. 
+Type ls to see a directory listing. If those two files don't show up, proceed to the next step. NOTE: Your SSH keys must be named id_rsa and id_rsa.pub in order for Git, GitHub, and BitBucket to recognize them by default.
+4. To create the SSH keys, type ssh-keygen -t rsa -C "your_email@example.com". This will create both id_rsa and id_rsa.pub files.
+	NOTE: I use hcluieip@gmail.com but any other email address (or text) would do
+	hit return when asked to enter file to save key; passphrase ... etc 
+5. do a cat id_rsa.pub & copy the text for the public key to, say Note++ or other editor buffer.
+	can go to c:\Users\[your name]\.ssh\ too 
+6. Copy the contents--exactly as it appears, with no extra spaces or lines--of id_rsa.pub and 
+7. go to https://github.com click the 'blue' button at top right corner; go to settings, SSH & GPG keys; clikc New SSH key; paste the text there, add title (say a PC id), enter password; then click Add SSH key
+
+
+
+
+git commands
+cd /c 			go to c:\Users\[username]
+
+
+git config --global user.name "username of github account"
+(set up username of github account)
+git config --global user.email hclui@eipgroup.asia (no "")
+
+git clone https://github.com/.... (folder repricated to PC)
+git add (filename)		to add filename to github
+git status
+git commit -m "say something like first commit" filename
+git push -u origin master	push file to github
+(windows prompt to request username & password)
+(can go to hithub.com; refresh page; and new file is 
+if file get changed;
+git status 	shows file modified
+git commit -m ......
+git push -u ........
+
