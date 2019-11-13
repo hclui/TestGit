@@ -1,10 +1,10 @@
-NDATA = 3
-NBIN = 5    # toddle between 'auto' and fixed # of bins when calling np.histogram
+NDATA = ---3
+NBIN = 5 abc   # toddle between 'auto' and fixed # of bins when calling np.histogram
             # if # of data ponts less then NBIN, then construct an histogram with NBIN
             # Problem is that the 'auto' mode may create a histogram with 
             # exceptionally large number of bins when # of data points are small 
 REMAIN = 0
-NLEVEL = 10
+NLEVEL = 100000
 # global variables
 #sf = []
 #RuleInfo = []
